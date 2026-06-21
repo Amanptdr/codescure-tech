@@ -1,4 +1,3 @@
-import { Button } from "../ui/Button";
 import { SectionHeading } from "../ui/SectionHeading";
 import drImg from '../../assets/dr.png'
 
@@ -34,16 +33,14 @@ export function TestimonialsSection() {
   return (
     <section className="section section--testimonials" id="testimonials" aria-labelledby="testimonials-title">
       <div className="section-shell">
-        {/* <div className="testimonials-cta">
-          <button className="btn-join">Join Now</button>
-        </div> */}
+       
         <div className="journey-tabs" role="tablist" aria-label="Journey modes">
               <button
                 type="button"
                 role="tab"
                 className={`journey-tabs__button${true ? ' journey-tabs__button--active' : ''}`}
               >
-Join <b>Now</b>
+              Join <b>Now</b>
               </button>
         </div>
 
