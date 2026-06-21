@@ -5,9 +5,9 @@ type SectionHeadingProps = {
 
 export function SectionHeading({ title, subtitle }: SectionHeadingProps) {
   return (
-    <div>
-      <h2>{title}</h2>
-      {subtitle ? <p>{subtitle}</p> : null}
+    <div className="section-heading">
+      <h2 className="section-title">{title}</h2>
+      {subtitle && <p className="section-subtitle">{subtitle}</p>}
     </div>
   )
 }
