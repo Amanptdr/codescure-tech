@@ -5,37 +5,46 @@ import Calling from '../../assets/Calling.svg'
 
 export function WhyChooseSection() {
   return (
-    <section className="feature-call-wrapper">
-      <div className="feature-call-shell">
+    <section className="section section--why" id="about" aria-labelledby="why-title">
+      <div className="section-shell">
         <SectionHeading
-          title="Join Our Circle of Care"
-          subtitle="Becoming a part of Amrutam is simple"
+          eyebrow="Why Doctors Choose Us?"
+          title="Why Doctors Choose Us?"
+          subtitle="Unlock the benefits of smarter healthcare management and patient care"
         />
 
-        <div className="feature-call-section">
-          <div className="feature-call-left" aria-hidden="true">
-            <div className="svg svg-1">
+        <div className="split-grid split-grid--reverse">
+          <div className="split-grid__visual split-grid__visual--freecall" aria-hidden="true">
+            <div className="orb orb--large"></div>
+            <article className="mini-card mini-card--floating mini-card--top">
               <img src={CallIcon} alt="" />
-            </div>
-
-            <div className="svg svg-2">
+              <div>
+                <strong>Free Phone Screening</strong>
+                <p>Connect with new patients before the visit.</p>
+              </div>
+            </article>
+            <article className="mini-card mini-card--floating mini-card--right">
               <img src={Calling} alt="" />
-            </div>
-
-            <div className="svg svg-3">
+              <div>
+                <strong>Instant voice triage</strong>
+                <p>Quick context, better recommendations.</p>
+              </div>
+            </article>
+            <article className="mini-card mini-card--floating mini-card--left">
               <img src={Calling1} alt="" />
-            </div>
+              <div>
+                <strong>Warm introductions</strong>
+                <p>Feel confident before the first consult.</p>
+              </div>
+            </article>
           </div>
 
-          <div className="feature-call-right">
-            <h2>
-              Instant <span>FREE</span> 5-Mins Call
-            </h2>
-
+          <div className="split-grid__content">
+            <h3>Instant FREE 5-Mins Call</h3>
             <p>
-              We understand the importance of building trust with your patients.
-              That's why Amrutam offers a free 5-minute call, helping you connect
-              instantly and foster lasting patient relationships with ease.
+              We understand the importance of building trust with your patients. That's why
+              Amrutam offers a free 5-minute call, helping you connect instantly and foster
+              lasting patient relationships with ease.
             </p>
           </div>
         </div>
