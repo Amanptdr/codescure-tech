@@ -122,19 +122,6 @@
   overflow: hidden;
 }
 
-.hero-section__background {
-  position: absolute;
-  left: 390px;
-  top: 8px;
-  width: 560px;
-  height: 320px;
-  border-radius: 42% 58% 51% 49% / 52% 38% 62% 48%;
-  background: radial-gradient(50% 50% at 50% 50%, #ffe6a5 0%, #ffe6a5 100%);
-  opacity: 1;
-  filter: none;
-  pointer-events: none;
-}
-
 .hero-section__copy {
   position: relative;
   z-index: 1;
@@ -241,7 +228,8 @@
   width: 500px;
   height: 410px;
   justify-self: end;
-  margin-right: 18px;
+  margin-right: 8px;
+  overflow: visible;
 }
 
 .hero-section__art-image {
@@ -274,7 +262,7 @@
 
 .hero-section__badge--top {
   top: 34px;
-  right: 8px;
+  right: 24px;
 }
 
 .hero-section__badge--bottom-left {
@@ -305,8 +293,7 @@
   }
 
   .hero-section__background {
-    left: 18%;
-    top: 0;
+    display: none;
   }
 }
 

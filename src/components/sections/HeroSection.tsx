@@ -4,8 +4,6 @@ export function HeroSection() {
   return (
     <section className="hero-section" id="hero">
       <div className="hero-section__frame">
-        <div className="hero-section__background" aria-hidden="true" />
-
         <div className="hero-section__copy">
           <p className="hero-section__eyebrow">Namaste, Welcome to Amrutam</p>
           <h1 className="hero-section__title">
