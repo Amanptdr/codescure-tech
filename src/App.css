@@ -104,6 +104,260 @@
   line-height: 1.2;
 }
 
+.hero-section {
+  background: #fff7e2;
+}
+
+.hero-section__frame {
+  position: relative;
+  width: min(1275px, calc(100% - 198px));
+  min-height: 488px;
+  margin: 0 auto;
+  padding: 24px 0;
+  display: grid;
+  grid-template-columns: 610px 520px;
+  gap: 0;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero-section__background {
+  position: absolute;
+  left: 390px;
+  top: 8px;
+  width: 560px;
+  height: 320px;
+  border-radius: 42% 58% 51% 49% / 52% 38% 62% 48%;
+  background: radial-gradient(50% 50% at 50% 50%, #ffe6a5 0%, #ffe6a5 100%);
+  opacity: 1;
+  filter: none;
+  pointer-events: none;
+}
+
+.hero-section__copy {
+  position: relative;
+  z-index: 1;
+  width: 610px;
+  max-width: 610px;
+  height: 253px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-left: 0;
+  justify-content: flex-start;
+}
+
+.hero-section__eyebrow {
+  color: #66625b;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.hero-section__title {
+  margin: 0;
+  color: #141414;
+  font-size: clamp(32px, 3.4vw, 48px);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  max-width: 585px;
+}
+
+.hero-section__title span {
+  color: #447743;
+}
+
+.hero-section__description {
+  max-width: 525px;
+  color: #5c5c5c;
+  font-size: 17px;
+  line-height: 1.28;
+}
+
+.hero-section__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  min-height: 54px;
+  border-radius: 12px;
+  background: #4d7746;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.hero-section__stats {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 230px;
+  height: 71px;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.hero-section__stat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 111px;
+  height: 71px;
+  padding-right: 8px;
+}
+
+.hero-section__stat:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 11px;
+  right: 0;
+  width: 1px;
+  height: 36px;
+  background: rgba(77, 119, 70, 0.28);
+}
+
+.hero-section__stat dt {
+  color: #141414;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero-section__stat dd {
+  margin: 0;
+  color: #4e4e4e;
+  font-size: 9px;
+  line-height: 1.1;
+}
+
+.hero-section__art {
+  position: relative;
+  z-index: 1;
+  width: 520px;
+  height: 420px;
+  justify-self: end;
+}
+
+.hero-section__art-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 520px;
+  height: 420px;
+  object-fit: contain;
+  display: block;
+}
+
+.hero-section__badge {
+  position: absolute;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #f8df92;
+  display: grid;
+  place-items: center;
+  color: #406c3f;
+}
+
+.hero-section__badge svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.hero-section__badge--top {
+  top: 34px;
+  right: 0;
+}
+
+.hero-section__badge--bottom-left {
+  left: 18px;
+  bottom: 26px;
+}
+
+.hero-section__badge--bottom-right {
+  right: 14px;
+  bottom: 22px;
+}
+
+@media (max-width: 1200px) {
+  .hero-section__frame {
+    width: min(100% - 48px, 1275px);
+    grid-template-columns: 1fr;
+    gap: 28px;
+    justify-items: center;
+  }
+
+  .hero-section__copy {
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    padding-left: 0;
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .hero-section__background {
+    left: 18%;
+    top: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-section__frame {
+    width: min(100% - 32px, 1275px);
+    min-height: auto;
+    padding: 18px 0 28px;
+  }
+
+  .hero-section__eyebrow {
+    font-size: 14px;
+  }
+
+  .hero-section__title {
+    font-size: 32px;
+  }
+
+  .hero-section__description {
+    font-size: 16px;
+  }
+
+  .hero-section__cta {
+    width: 170px;
+    min-height: 52px;
+    font-size: 16px;
+  }
+
+  .hero-section__stats {
+    gap: 18px;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+
+  .hero-section__art {
+    width: 100%;
+    max-width: 520px;
+    height: 360px;
+  }
+
+  .hero-section__art-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-section__background {
+    width: 460px;
+    height: 300px;
+  }
+}
+
 
 @media (max-width: 900px) {
   .site-header__top {
