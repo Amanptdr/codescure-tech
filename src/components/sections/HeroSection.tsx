@@ -15,7 +15,7 @@ export function HeroSection() {
             and grow your Ayurvedic practice effortlessly.
           </p>
 
-          <a className="hero-section__cta" href="#join">
+          <a className="hero-section__cta" href="#join-circle">
             Join Now
           </a>
 

@@ -1,6 +1,6 @@
 export function JoinCircleSection() {
   return (
-    <section className="section section--join" id="onboarding" aria-labelledby="join-title">
+    <section className="section section--join" id="join-circle" aria-labelledby="join-title">
       <div className="section-shell">
         <div className="join-grid">
           <div className="join-grid__steps">

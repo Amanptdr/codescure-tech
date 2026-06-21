@@ -15,7 +15,7 @@ export function JourneySection() {
         </div>
         <div className="journey-cta">
           <h3>Today&apos;s Healing Journey</h3>
-          <a className="cta-button" href="#join">
+          <a className="cta-button" href="#join-circle">
             Join Now
           </a>
         </div>

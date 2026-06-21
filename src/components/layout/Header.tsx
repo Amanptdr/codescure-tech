@@ -1,9 +1,9 @@
 export function Header() {
   return (
-    <header className="site-header">
+    <header className="site-header" id="top">
       <div className="site-header__top">
         <p className="site-header__announce">Register Yourself As An Amrutam Doctor</p>
-        <a className="site-header__join" href="#join">
+        <a className="site-header__join" href="#join-circle">
           <svg
             className="site-header__join-icon"
             viewBox="0 0 24 24"
