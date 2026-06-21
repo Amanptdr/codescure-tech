@@ -238,17 +238,18 @@
 .hero-section__art {
   position: relative;
   z-index: 1;
-  width: 520px;
-  height: 420px;
+  width: 500px;
+  height: 410px;
   justify-self: end;
+  margin-right: 18px;
 }
 
 .hero-section__art-image {
   position: absolute;
   right: 0;
   top: 0;
-  width: 520px;
-  height: 420px;
+  width: 500px;
+  height: 410px;
   object-fit: contain;
   display: block;
 }
@@ -273,17 +274,17 @@
 
 .hero-section__badge--top {
   top: 34px;
-  right: 0;
+  right: 8px;
 }
 
 .hero-section__badge--bottom-left {
-  left: 18px;
-  bottom: 26px;
+  left: 10px;
+  bottom: 22px;
 }
 
 .hero-section__badge--bottom-right {
-  right: 14px;
-  bottom: 22px;
+  right: 18px;
+  bottom: 18px;
 }
 
 @media (max-width: 1200px) {
@@ -343,8 +344,9 @@
 
   .hero-section__art {
     width: 100%;
-    max-width: 520px;
-    height: 360px;
+    max-width: 500px;
+    height: 380px;
+    margin-right: 0;
   }
 
   .hero-section__art-image {
