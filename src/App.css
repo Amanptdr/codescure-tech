@@ -26,6 +26,18 @@
   color: #446b41;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 .section-subtitle {
   margin: 10px auto 0;
   max-width: 720px;
@@ -774,30 +786,88 @@
   border-radius: 999px;
 }
 
-.journey-grid {
+.section--journey {
+  background: #fbf4df;
+}
+
+.journey-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 38px;
+}
+
+.journey-tabs__button {
+  min-height: 44px;
+  padding: 0 22px;
+  border-radius: 10px;
+  border: 1px solid rgba(76, 110, 58, 0.42);
+  background: transparent;
+  color: #4c7042;
+  font: inherit;
+  font-size: 18px;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.journey-tabs__button:hover,
+.journey-tabs__button:focus-visible,
+.journey-tabs__button--active {
+  background: #3d6f3c;
+  color: #fff;
+  border-color: #3d6f3c;
+  box-shadow: 0 12px 28px rgba(61, 111, 60, 0.18);
+  outline: none;
+}
+
+.journey-triptych {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  align-items: end;
+  gap: 30px;
+  align-items: start;
 }
 
-.phone-mock {
-  border-radius: 30px;
-  padding: 12px;
-  background: #1a1a1a;
+.journey-visual-card {
+  display: grid;
+  justify-items: center;
+  gap: 16px;
 }
 
-.phone-mock--center {
-  transform: translateY(-14px);
-}
-
-.phone-mock__screen {
-  min-height: 340px;
-}
-
-.journey-cta {
-  margin-top: 22px;
+.journey-visual-card h3 {
+  margin: 0;
   text-align: center;
+  color: #446b41;
+  font-size: clamp(24px, 2.4vw, 33px);
+  line-height: 1.15;
+}
+
+.journey-visual-card__phone {
+  width: min(100%, 300px);
+}
+
+.journey-visual-card__phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.journey-visual-card:nth-child(2) {
+  transform: translateY(-28px);
+}
+
+.journey-visual-card:nth-child(2) .journey-visual-card__phone {
+  width: min(100%, 330px);
+}
+
+.journey-visual-card:nth-child(1) .journey-visual-card__phone,
+.journey-visual-card:nth-child(3) .journey-visual-card__phone {
+  width: min(100%, 260px);
 }
 
 .testimonial-grid {
@@ -972,7 +1042,7 @@
   }
 
   .testimonial-grid,
-  .journey-grid {
+  .journey-triptych {
     grid-template-columns: 1fr;
   }
 
@@ -1009,6 +1079,15 @@
 
   .join-grid__visual {
     min-height: 360px;
+  }
+
+  .journey-triptych {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .journey-visual-card:nth-child(2) {
+    transform: none;
   }
 }
 
@@ -1057,6 +1136,20 @@
     width: 100%;
     aspect-ratio: 1.08 / 1;
     padding: 12px;
+  }
+
+  .journey-tabs {
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .journey-tabs__button {
+    font-size: 16px;
+    padding: 0 16px;
+  }
+
+  .journey-visual-card__phone {
+    width: min(100%, 240px);
   }
 
   .feature-showcase__blob {
